@@ -15,7 +15,7 @@ This script will be use git filter-repo to extract a single directory from a git
 and create a new repo with only that directory.
 
 Usage: extract_repo.bash -d <directory> -o <github-org) -r <repo_name> --newrepo <new_repo_name>
-Example: extract_repo.bash -p "src" -o "my-org" -r "my-repo" --newrepo "my-new-repo"
+Example: extract_repo.bash -d "src" -o "my-org" -r "my-repo" --newrepo "my-new-repo"
 
 The script will create a new directory with the name of the new repo and clone the repo into it.
 Then it will run git filter-repo to extract the directory and create a new repo with only that directory.
