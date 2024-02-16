@@ -7,6 +7,18 @@ single directory from a Git repository and create a new repository with
 only that directory. This script simplifies the process of extracting
 specific directories for further analysis or sharing.
 
+## Update git-filter-repo
+
+NOTE: Due to an issue with the latest release of [`git-filter-repo` (v2.38.0)
+and git 2.43.0](https://github.com/newren/git-filter-repo/issues/523), you will
+need to update to a [PR #526](https://github.com/newren/git-filter-repo/pull/526) to fix the issue. To do this, grab it with:
+```
+gh repo clone newren/git-filter-repo
+cd git-filter-repo
+gh pr checkout 526
+```
+and make sure `which git-filter-repo` points to the updated script.
+
 ## Usage
 
 ```bash
