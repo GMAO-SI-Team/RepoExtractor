@@ -201,7 +201,7 @@ if [[ $CREATE_REPO == TRUE ]]; then
    if [[ $DRYRUN == TRUE ]]; then
       msg "${GREEN}gh repo create ${org}/${newrepo} --public ${NOFORMAT}"
    else
-      gh repo create ${org}/${newrepo} --public 
+      gh repo create ${org}/${newrepo} --public
    fi
 fi
 
